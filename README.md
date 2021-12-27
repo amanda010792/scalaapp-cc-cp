@@ -1,4 +1,4 @@
-# pythonapp-cc-cp
+# scalaapp-cc-cp
 
 schemas 
 
