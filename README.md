@@ -84,7 +84,7 @@ In GuestInfoProducer.scala, update var fileName to point to your guestInfo mock 
 ### running the code to show cluster linking replication 
 
 produce records to endpoint topic on CC <br />
-`sbt "runMain io.confluent.examples.clients.scala.EndpointProducer <java config> endpoint"` <br />
+`sbt "runMain io.confluent.examples.clients.scala.EndpointProducer <path to java.config> endpoint"` <br />
 show that records have been written to CC <br /> 
 `confluent kafka topic consume endpoint --from-beginning` <br />
 show that records have been mirrored to CP <br /> 
@@ -96,7 +96,7 @@ show that records have been written to CP <br />
 show that records have been mirrored to CC <br /> 
 `confluent kafka topic consume guestInfo --from-beginning` <br /> 
 consume records from guestInfo on CC using scala consumer <br /> 
-`sbt "runMain io.confluent.examples.clients.scala.Consumer <java config> guestInfo"` <br /> 
+`sbt "runMain io.confluent.examples.clients.scala.Consumer <path to java.config> guestInfo"` <br /> 
 <br /> <br /> 
 code can be added to count number of records produced/consumed to ensure there is no data loss <br /> 
 <br /> 
