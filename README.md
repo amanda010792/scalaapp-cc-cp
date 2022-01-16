@@ -2,6 +2,8 @@
 
 ## demo overview 
 
+![alt text](https://github.com/amanda010792/scalaapp-cc-cp/blob/main/NCL%20App%20Demo.png)
+
 ### schemas 
 
 [guest info](https://www.mockaroo.com/609a0780) 
