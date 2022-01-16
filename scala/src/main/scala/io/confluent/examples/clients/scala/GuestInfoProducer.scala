@@ -36,7 +36,7 @@ import scala.io.Source
 
 object GuestInfoProducer extends App {
   val  props = new Properties()
- props.put("bootstrap.servers", "localhost:9092")
+ props.put("bootstrap.servers", <bootstrap servers for CP>)
   
  props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
  props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
@@ -44,7 +44,7 @@ object GuestInfoProducer extends App {
  val producer = new KafkaProducer[String, String](props)
    
  val TOPIC="guestInfo"
- val fileName = "/home/ec2-user/guestinfo.csv"
+ val fileName = <guestInfo mock data file path> 
 
  for (line <- Source.fromFile(fileName).getLines().drop(1)) { // Dropping the column names
       // Extract Key
