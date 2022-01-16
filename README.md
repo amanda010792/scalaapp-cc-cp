@@ -83,6 +83,9 @@ In GuestInfoProducer.scala, update var fileName to point to your guestInfo mock 
 
 ### running the code to show cluster linking replication 
 
+compile the code <br /> 
+`cd scala` <br /> 
+`sbt clean build` <br /> 
 produce records to endpoint topic on CC <br />
 `sbt "runMain io.confluent.examples.clients.scala.EndpointProducer <path to java.config> endpoint"` <br />
 show that records have been written to CC <br /> 
