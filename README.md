@@ -74,8 +74,12 @@ download guestInfo data (take note of the full path of where you download this f
 ### updating the producers/consumers and configuration files 
 
 In EndpointProducer.scala, update var fileName to point to your endpoint mock data <br /> 
-`var fileName = <path to your endpoint mock data` <br /> 
+`var fileName = <path to your endpoint mock data>` <br /> 
 In java.config, add bootstrap server to CC and an API key and secret (for cluster, can create via UI or CLI) <br /> 
+<br /> 
+In GuestInfoProducer.scala, update var fileName to point to your guestInfo mock data. Also, update your bootstrap servers to point to the bootstrap servers <br /> 
+`var fileName = <path to your guestInfo mock data>` <br /> 
+`bootstrap.servers = <your servers>` <br /> 
 
 ### running the code to show cluster linking replication 
 
