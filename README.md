@@ -2,7 +2,7 @@
 
 ## demo overview 
 
-![alt text](https://github.com/amanda010792/scalaapp-cc-cp/blob/main/NCL%20App%20Demo.png)
+![alt text](https://github.com/amanda010792/scalaapp-cc-cp/blob/main/ShipShore%20Replication.png)
 
 ### schemas 
 
